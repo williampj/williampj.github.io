@@ -1379,7 +1379,7 @@ ul.actions {
   -ms-justify-content: center;
   justify-content: center;
   position: relative;
-  height: 24em;
+  height: 100vh;
   background: url("../../images/banner.jpg") center center;
   background-size: cover;
   padding: 0; }
@@ -1717,8 +1717,7 @@ ul.actions {
     -moz-transition: -moz-transform 0.5s ease;
     -webkit-transition: -webkit-transform 0.5s ease;
     -ms-transition: -ms-transform 0.5s ease;
-    transition: transform 0.5s ease;
-    padding-bottom: 1px; }
+    transition: transform 0.5s ease; }
   #titleBar {
     -moz-backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
@@ -2012,27 +2011,29 @@ ul.actions {
       width: 40%; } }
 
 #bridgeapi-gif {
-  grid-area: gif;
-  margin-top: -2em;
-  width: 100%;
-  height: 80%; }
+  display: flex;
+  max-width: 60%;
+  align-self: center; }
+  @media screen and (max-width: 736px) {
+    #bridgeapi-gif {
+      width: 100%; } }
 
 #bridgeapi-title {
   color: '#184d47'; }
 
-#bridge-icon {
-  width: 70%;
-  margin: 0 auto -5em;
-  grid-area: bridge-icon; }
-
 #bridge-logo {
-  grid-area: logo;
-  width: 70%;
-  margin: 0 auto; }
+  display: flex;
+  max-width: 35%;
+  align-self: center; }
+  @media screen and (max-width: 736px) {
+    #bridge-logo {
+      width: 100%; } }
 
 .bridgeapi-container {
-  display: grid;
-  grid-template-areas: 'bridge-icon gif' 'logo gif'; }
+  display: flex; }
+  @media screen and (max-width: 736px) {
+    .bridgeapi-container {
+      flex-direction: column; } }
 
 .external-icon {
   width: 3em; }

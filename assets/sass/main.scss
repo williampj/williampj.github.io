@@ -951,7 +951,7 @@ ul.actions {
   @include vendor('align-items', 'center');
   @include vendor('justify-content', 'center');
   position: relative;
-  height: 24em;
+  height: 100vh;
   // height: 17em;
   background: url('../../images/banner.jpg') center center;
   background-size: cover;
@@ -1467,7 +1467,6 @@ ul.actions {
   #page-wrapper {
     @include vendor('backface-visibility', 'hidden');
     @include vendor('transition', 'transform #{_duration(navPanel)} ease');
-    padding-bottom: 1px;
   }
 
   #titleBar {
@@ -1881,33 +1880,35 @@ ul.actions {
 }
 
 #bridgeapi-gif {
-  grid-area: gif;
-  margin-top: -2em;
-  width: 100%;
-  height: 80%;
+  display: flex;
+  max-width: 60%;
+  align-self: center;
+  @include breakpoint('<=small') {
+    width: 100%;
+    // add bottom margin to mobile
+  }
 }
 
 #bridgeapi-title {
   color: '#184d47';
 }
 
-#bridge-icon {
-  width: 70%;
-  margin: 0 auto -5em;
-  grid-area: bridge-icon;
-}
-
 #bridge-logo {
-  grid-area: logo;
-  width: 70%;
-  margin: 0 auto;
+  display: flex;
+  max-width: 35%;
+  align-self: center;
+  @include breakpoint('<=small') {
+    width: 100%;
+    // add bottom margin to mobile
+  }
 }
 
 .bridgeapi-container {
-  display: grid;
-  grid-template-areas:
-    'bridge-icon gif'
-    'logo gif';
+  display: flex;
+
+  @include breakpoint('<=small') {
+    flex-direction: column;
+  }
 }
 
 .external-icon {
