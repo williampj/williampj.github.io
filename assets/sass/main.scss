@@ -1883,6 +1883,7 @@ ul.actions {
   display: flex;
   max-width: 60%;
   align-self: center;
+  margin-left: 10px;
   @include breakpoint('<=small') {
     max-width: 100%;
     margin-bottom: 10px;

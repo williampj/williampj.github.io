@@ -2013,7 +2013,8 @@ ul.actions {
 #bridgeapi-gif {
   display: flex;
   max-width: 60%;
-  align-self: center; }
+  align-self: center;
+  margin-left: 10px; }
   @media screen and (max-width: 736px) {
     #bridgeapi-gif {
       max-width: 100%;
