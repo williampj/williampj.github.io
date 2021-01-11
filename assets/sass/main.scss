@@ -602,6 +602,7 @@ button,
   &.style3 {
     background: #2f333b url('images/overlay.png');
     color: #fff;
+    margin-bottom: 3.5em;
 
     &:hover {
       background-color: #3f434b;
@@ -777,7 +778,8 @@ ul.actions {
 
   &.brands {
     &:before {
-      font-family: 'Font Awesome 5 Brands';
+      // font-family: 'Font Awesome 5 Brands';
+      font-family: 'Source Sans Pro';
     }
   }
 }
@@ -835,9 +837,9 @@ ul.actions {
     text-align: center;
     text-transform: uppercase;
     display: block;
-    font-weight: 700;
+    font-weight: 800;
     letter-spacing: 0.25em;
-    font-size: 0.9em;
+    font-size: 1.3em;
     width: 25em;
     height: 3.25em;
     top: -3.25em;
@@ -868,7 +870,7 @@ ul.actions {
     }
 
     &:hover {
-      cursor: pointer
+      cursor: pointer;
     }
   }
 
@@ -896,10 +898,11 @@ ul.actions {
   }
 
   &.style2 {
-    background: #fff;
+    background: #a7bfbe;
+    color: #000;
 
     .title {
-      background: #fff;
+      background: #a7bfbe;
       color: #484d55;
     }
   }
@@ -1143,10 +1146,10 @@ ul.actions {
   }
 }
 
-/* Highlights */
+/* other-projects */
 
-#highlights {
-  .highlight {
+#projects {
+  .project {
     text-align: center;
 
     h3 {
@@ -1156,11 +1159,6 @@ ul.actions {
       letter-spacing: 0.05em;
     }
   }
-}
-
-/* Main */
-
-#main {
 }
 
 /* Footer */
@@ -1874,10 +1872,49 @@ ul.actions {
 
 /* Custom */
 #avatar {
+  // margin: 5em 0;
+  margin-top: -10em;
   margin-bottom: 2em;
-  width: 15%;
+  width: 20%;
 }
 
 .header-text {
   padding: 0 20em;
+}
+
+#bridgeapi-gif {
+  grid-area: gif;
+  margin-top: -2em;
+  width: 120%;
+  height: 110%;
+}
+
+#bridgeapi-title {
+  color: '#184d47';
+}
+
+#bridge-icon {
+  width: 70%;
+  margin: 0 auto;
+  grid-area: bridge-icon;
+}
+
+#logo {
+  grid-area: logo;
+  width: 80%;
+  margin: -3em auto;
+}
+
+.bridgeapi-container {
+  display: grid;
+  grid-template-areas:
+    'bridge-icon gif'
+    'logo gif';
+  // justify-content: space-between;
+  // align-items: space-between;
+  // width: 100%;
+}
+
+.icon {
+  width: 50px;
 }

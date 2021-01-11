@@ -1117,7 +1117,8 @@ button,
   button.style3,
   .button.style3 {
     background: #2f333b url("images/overlay.png");
-    color: #fff; }
+    color: #fff;
+    margin-bottom: 3.5em; }
     input[type='button'].style3:hover,
     input[type='submit'].style3:hover,
     input[type='reset'].style3:hover,
@@ -1244,7 +1245,7 @@ ul.actions {
   .icon.solid:before {
     font-weight: 900; }
   .icon.brands:before {
-    font-family: 'Font Awesome 5 Brands'; }
+    font-family: 'Source Sans Pro'; }
 
 /* Box */
 .box header {
@@ -1285,9 +1286,9 @@ ul.actions {
     text-align: center;
     text-transform: uppercase;
     display: block;
-    font-weight: 700;
+    font-weight: 800;
     letter-spacing: 0.25em;
-    font-size: 0.9em;
+    font-size: 1.3em;
     width: 25em;
     height: 3.25em;
     top: -3.25em;
@@ -1335,9 +1336,10 @@ ul.actions {
     .wrapper.style1 a {
       color: #fff; }
   .wrapper.style2 {
-    background: #fff; }
+    background: #a7bfbe;
+    color: #000; }
     .wrapper.style2 .title {
-      background: #fff;
+      background: #a7bfbe;
       color: #484d55; }
   .wrapper.style3 {
     background: #f3f3f3 url("images/overlay.png"); }
@@ -1516,16 +1518,15 @@ ul.actions {
 #features ul.actions {
   margin-top: 5em; }
 
-/* Highlights */
-#highlights .highlight {
+/* other-projects */
+#projects .project {
   text-align: center; }
-  #highlights .highlight h3 {
+  #projects .project h3 {
     color: #e97770;
     margin: 0 0 0.75em 0;
     font-size: 1.15em;
     letter-spacing: 0.05em; }
 
-/* Main */
 /* Footer */
 #footer {
   background: #282b34 url("images/overlay.png");
@@ -2017,8 +2018,35 @@ ul.actions {
 
 /* Custom */
 #avatar {
+  margin-top: -10em;
   margin-bottom: 2em;
-  width: 15%; }
+  width: 20%; }
 
 .header-text {
   padding: 0 20em; }
+
+#bridgeapi-gif {
+  grid-area: gif;
+  margin-top: -2em;
+  width: 120%;
+  height: 110%; }
+
+#bridgeapi-title {
+  color: '#184d47'; }
+
+#bridge-icon {
+  width: 70%;
+  margin: 0 auto;
+  grid-area: bridge-icon; }
+
+#logo {
+  grid-area: logo;
+  width: 80%;
+  margin: -3em auto; }
+
+.bridgeapi-container {
+  display: grid;
+  grid-template-areas: 'bridge-icon gif' 'logo gif'; }
+
+.icon {
+  width: 50px; }
