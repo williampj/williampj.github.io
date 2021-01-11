@@ -2013,7 +2013,7 @@ ul.actions {
 #bridgeapi-gif {
   grid-area: gif;
   margin-top: -2em;
-  width: 120%;
+  width: 100%;
   height: 100%; }
 
 #bridgeapi-title {
@@ -2021,13 +2021,13 @@ ul.actions {
 
 #bridge-icon {
   width: 70%;
-  margin: 0 auto;
+  margin: 0 auto -5em;
   grid-area: bridge-icon; }
 
 #logo {
   grid-area: logo;
-  width: 80%;
-  margin: -3em auto; }
+  width: 70%;
+  margin: 0 auto; }
 
 .bridgeapi-container {
   display: grid;
