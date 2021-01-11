@@ -1,58 +1,42 @@
-/*
-	Escape Velocity by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+/* eslint-disable linebreak-style */
 
-(function ($) {
-  const $window = $(window);
-  const $body = $("body");
+document.addEventListener('DOMContentLoaded', () => {
+  // const smoothScrollToTop = (e) => {
+  //   const offsetTop = document.querySelector(href);
 
-  // Breakpoints.
-  breakpoints({
-    xlarge: ["1281px", "1680px"],
-    large: ["981px", "1280px"],
-    medium: ["737px", "980px"],
-    small: [null, "736px"],
-  });
+  //   scroll({
+  //     top: offsetTop,
+  //     behavior: 'smooth',
+  //   });
+  // };
 
-  // Play initial animations on page load.
-  $window.on("load", () => {
-    window.setTimeout(() => {
-      $body.removeClass("is-preload");
-    }, 100);
-  });
-
-  // Dropdowns.
-  $("#nav > ul").dropotron({
-    mode: "fade",
-    noOpenerFade: true,
-    alignment: "center",
-    detach: false,
-  });
-
-  // Nav.
-
-  // Title Bar.
-  $(
-    `${
-      "<div id=\"titleBar\">"
-      + "<a href=\"#navPanel\" class=\"toggle\"></a>"
-      + "<span class=\"title\">"
-    }${$("#logo h1").html()}</span>` + "</div>",
-  ).appendTo($body);
-
-  // Panel.
-  $(`${"<div id=\"navPanel\">" + "<nav>"}${$("#nav").navList()}</nav>` + "</div>")
-    .appendTo($body)
-    .panel({
-      delay: 500,
-      hideOnClick: true,
-      hideOnSwipe: true,
-      resetScroll: true,
-      resetForms: true,
-      side: "left",
-      target: $body,
-      visibleClass: "navPanel-visible",
+  document.querySelectorAll('.title').forEach((title) => {
+    title.addEventListener('click', (e) => {
+      e.preventDefault();
+      const section = e.target.parentElement;
+      window.scroll({
+        top: section.offsetTop - 50,
+        left: 0,
+        behavior: 'smooth',
+      });
     });
-}(jQuery));
+  });
+
+  // const titles = document.querySelectorAll('.title');
+  // titles.forEach((title) => title.addEventListener('click', (e) => {
+  //   window.scroll({
+  //     e.clientY
+  //     // top: this.offsetTop,
+  //     // behavior: 'smooth',
+  //   });
+});
+// for (const title of titles) {
+//   title.addEventListener('click', smoothScrollToTop);
+// }
+
+// titles.addEventListener('click', () => {
+//   window.scrollTo(this.o, 0);
+//   window.scrollTo(0, 0);
+// });
+
+// window.scrollTo(x - coordinate, y - coordinate);

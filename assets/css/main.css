@@ -1315,6 +1315,8 @@ ul.actions {
       width: 35px;
       height: 38px;
       background: url("images/shadow.png"); }
+    .wrapper .title:hover {
+      cursor: pointer; }
   .wrapper.style1 {
     background: #e97770 url("images/overlay.png");
     color: #eee;
@@ -1377,7 +1379,7 @@ ul.actions {
     height: 100%;
     background: url("images/overlay.png"); }
   .homepage #header {
-    height: 35em; }
+    height: 100vh; }
 
 /* Logo */
 #logo {

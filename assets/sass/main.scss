@@ -866,6 +866,10 @@ ul.actions {
       height: 38px;
       background: url('images/shadow.png');
     }
+
+    &:hover {
+      cursor: pointer
+    }
   }
 
   &.style1 {
@@ -930,6 +934,7 @@ ul.actions {
   @include vendor('justify-content', 'center');
   position: relative;
   height: 24em;
+  // height: 17em;
   background: url('../../images/banner.jpg') center center;
   background-size: cover;
   padding: 0;
@@ -945,7 +950,8 @@ ul.actions {
   }
 
   .homepage & {
-    height: 35em;
+    // height: 35em;
+    height: 100vh;
   }
 }
 
