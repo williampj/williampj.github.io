@@ -1394,10 +1394,13 @@ ul.actions {
 
 /* Logo */
 #logo {
-  width: 100%;
+  width: 70%;
   text-align: center;
   position: relative;
   top: 1.5em; }
+  @media screen and (max-width: 736px) {
+    #logo {
+      width: 100%; } }
   #logo h1 {
     font-weight: 900;
     text-transform: uppercase;
@@ -2004,6 +2007,9 @@ ul.actions {
   margin-top: -10em;
   margin-bottom: 2em;
   width: 20%; }
+  @media screen and (max-width: 736px) {
+    #avatar {
+      width: 40%; } }
 
 #bridgeapi-gif {
   grid-area: gif;
@@ -2019,7 +2025,7 @@ ul.actions {
   margin: 0 auto -5em;
   grid-area: bridge-icon; }
 
-#logo {
+#bridge-logo {
   grid-area: logo;
   width: 70%;
   margin: 0 auto; }

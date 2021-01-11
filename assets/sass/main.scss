@@ -966,20 +966,19 @@ ul.actions {
     height: 100%;
     background: url('images/overlay.png');
   }
-
-  // .homepage & {
-  //   // height: 35em;
-  //   height: 100vh;
-  // }
 }
 
 /* Logo */
 
 #logo {
-  width: 100%;
+  width: 70%;
   text-align: center;
   position: relative;
   top: 1.5em;
+
+  @include breakpoint('<=small') {
+    width: 100%;
+  }
 
   h1 {
     font-weight: 900;
@@ -1875,6 +1874,10 @@ ul.actions {
   margin-top: -10em;
   margin-bottom: 2em;
   width: 20%;
+
+  @include breakpoint('<=small') {
+    width: 40%;
+  }
 }
 
 #bridgeapi-gif {
@@ -1894,7 +1897,7 @@ ul.actions {
   grid-area: bridge-icon;
 }
 
-#logo {
+#bridge-logo {
   grid-area: logo;
   width: 70%;
   margin: 0 auto;
