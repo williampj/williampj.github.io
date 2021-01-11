@@ -1883,8 +1883,9 @@ ul.actions {
   display: flex;
   max-width: 60%;
   align-self: center;
+  margin-bottom: 10px;
   @include breakpoint('<=small') {
-    width: 100%;
+    max-width: 100%;
     // add bottom margin to mobile
   }
 }
@@ -1897,14 +1898,18 @@ ul.actions {
   display: flex;
   max-width: 35%;
   align-self: center;
+  margin-right: 10px;
+  margin-bottom: 10px;
   @include breakpoint('<=small') {
-    width: 100%;
+    max-width: 100%;
+    margin-right: 0;
     // add bottom margin to mobile
   }
 }
 
 .bridgeapi-container {
   display: flex;
+  justify-content: center;
 
   @include breakpoint('<=small') {
     flex-direction: column;
