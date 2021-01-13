@@ -592,11 +592,11 @@ ul.actions {
   max-width: 58em;
   margin-left: auto;
   margin-right: auto;
-  // position: relative;
+  position: relative;
   top: 0.75em;
 
   > .row {
-    display: flex;
+    display: -webkit-box;
     flex-direction: row;
     justify-content: center;
   }
@@ -605,7 +605,7 @@ ul.actions {
     position: relative;
 
     &.contact {
-      display: flex;
+      display: -webkit-flex;
       flex-direction: column;
       align-items: center;
       margin-bottom: -1em;
@@ -1339,7 +1339,7 @@ ul.actions {
       margin-left: -1.5em;
 
       > .row {
-        display: flex;
+        display: -webkit-flex;
         flex-direction: row;
         justify-content: flex-start;
       }
@@ -1365,7 +1365,7 @@ ul.actions {
 }
 
 #bridgeapi-gif {
-  display: flex;
+  display: -webkit-flex;
   max-width: 60%;
   align-self: center;
   margin-left: 10px;
@@ -1380,7 +1380,7 @@ ul.actions {
 }
 
 #bridge-logo {
-  display: flex;
+  display: -webkit-flex;
   max-width: 35%;
   align-self: center;
   margin-right: 10px;
@@ -1392,7 +1392,7 @@ ul.actions {
 }
 
 .bridgeapi-container {
-  display: flex;
+  display: -webkit-flex;
   justify-content: center;
   margin-bottom: 10px;
 
