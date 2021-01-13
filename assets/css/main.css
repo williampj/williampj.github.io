@@ -1104,15 +1104,16 @@ ul.actions {
   max-width: 58em;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
   top: 0.75em; }
   .feature-list > .row {
-    display: flex;
+    display: -webkit-flex;
     flex-direction: row;
     justify-content: center; }
   .feature-list section {
     position: relative; }
     .feature-list section.contact {
-      display: flex;
+      display: -webkit-flex;
       flex-direction: column;
       align-items: center;
       margin-bottom: -1em; }
@@ -1591,7 +1592,7 @@ ul.actions {
       padding-top: 0;
       margin-left: -1.5em; }
       #footer .feature-list > .row {
-        display: flex;
+        display: -webkit-flex;
         flex-direction: row;
         justify-content: flex-start; } }
 
@@ -1607,8 +1608,8 @@ ul.actions {
       padding-top: 35em; } }
 
 #bridgeapi-gif {
-  display: flex;
-  max-width: 60%;
+  display: -webkit-flex;
+  max-width: 50%;
   align-self: center;
   margin-left: 10px; }
   @media screen and (max-width: 736px) {
@@ -1620,7 +1621,7 @@ ul.actions {
   color: '#184d47'; }
 
 #bridge-logo {
-  display: flex;
+  display: -webkit-flex;
   max-width: 35%;
   align-self: center;
   margin-right: 10px; }
@@ -1631,7 +1632,7 @@ ul.actions {
       margin-right: 0; } }
 
 .bridgeapi-container {
-  display: flex;
+  display: -webkit-flex;
   justify-content: center;
   margin-bottom: 10px; }
   @media screen and (max-width: 736px) {

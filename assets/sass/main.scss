@@ -596,7 +596,7 @@ ul.actions {
   top: 0.75em;
 
   > .row {
-    display: -webkit-box;
+    display: -webkit-flex;
     flex-direction: row;
     justify-content: center;
   }
@@ -1366,7 +1366,7 @@ ul.actions {
 
 #bridgeapi-gif {
   display: -webkit-flex;
-  max-width: 60%;
+  max-width: 50%;
   align-self: center;
   margin-left: 10px;
   @include breakpoint('<=small') {
