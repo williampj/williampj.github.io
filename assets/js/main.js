@@ -12,5 +12,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   };
 
-  document.querySelectorAll('.title').forEach((title) => title.addEventListener('click', scrollSectionToTopOfWindow));
+  document
+    .querySelectorAll('.title')
+    .forEach((title) =>
+      title.addEventListener('click', scrollSectionToTopOfWindow),
+    );
 });
